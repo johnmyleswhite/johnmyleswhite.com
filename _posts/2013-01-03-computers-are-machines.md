@@ -89,7 +89,7 @@ BigInt(typemax(Int)) + 1 # => 9223372036854775808
 BigInt(factorial(20)) * 21 # => 51090942171709440000
 {% endhighlight %}
 
-Now everything works smoothly. By working with `BigInt`&#8216;s automatically, languages like Python avoid these concerns:
+Now everything works smoothly. By working with `BigInt`'s automatically, languages like Python avoid these concerns:
 
 {% highlight python %}
 factorial(20) # => 2432902008176640000

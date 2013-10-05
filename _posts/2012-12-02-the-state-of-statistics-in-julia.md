@@ -206,7 +206,7 @@ Now that you can see that Julia can handle complex data sets, let's talk a littl
 
 ### The DataFrames Package
 
-The [DataFrames]() package provides data structures for working with tabular data in Julia. At a minimum, this means that DataFrames provides tools for dealing with individual columns of missing data, which are called `DataVec`&#8216;s. A collection of `DataVec`&#8216;s allows one to build up a `DataFrame`, which provides a tabular data structure like that used by R's `data.frame` type.
+The [DataFrames]() package provides data structures for working with tabular data in Julia. At a minimum, this means that DataFrames provides tools for dealing with individual columns of missing data, which are called `DataVec`'s. A collection of `DataVec`'s allows one to build up a `DataFrame`, which provides a tabular data structure like that used by R's `data.frame` type.
 
 {% highlight julia %}
 julia> load("DataFrames")

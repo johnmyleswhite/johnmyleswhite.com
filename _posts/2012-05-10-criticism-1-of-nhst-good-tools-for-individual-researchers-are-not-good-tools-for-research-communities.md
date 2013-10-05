@@ -1,0 +1,49 @@
+---
+title: "Criticism 1 of NHST: Good Tools for Individual Researchers are not Good Tools for Research Communities"
+author: John Myles White
+layout: post
+permalink: /notebook/2012/05/10/criticism-1-of-nhst-good-tools-for-individual-researchers-are-not-good-tools-for-research-communities/
+categories:
+  - Academia
+  - Economics
+  - Psychology
+  - Statistics
+---
+
+### Introduction
+
+Over my years as a graduate student, I have built up a long list of complaints about the use of Null Hypothesis Significance Testing (NHST) in the empirical sciences. In the next few weeks, I'm planning to publish a series of blog posts, each of which will articulate one specific weakness of NHST. The weaknesses I will discuss are not novel observations about NHST: people have been complaining about the use of p-values since the 1950's. My intention is simply to gather all of the criticisms of NHST in a single place and to articulate each of the criticisms in a way that permits no confusion. I'm hoping that readers will comment on these pieces and give me enough feedback to sharpen the points into a useful resource for the community.
+
+In the interest of absolute clarity, I should note at the start of this series that I am primarily unhappy with the use of p-values as (1) a threshold that scientific results are expected to pass before they are considered publishable and (2) a measure of the evidence in defense of a hypothesis. I believe that p-values cannot be used for either of these purposes, but I will concede upfront that p-values can be useful to researchers who wish to test their own private hypotheses.
+
+With that limitation of scope in mind, let's get started.
+
+### Communities of Researchers Face Different Problems than Individual Researchers
+
+Many scientists who defend the use of p-values as a threshold for publication employ an argument that, in broad form, can be summarized as follows: "a community of researchers can be thought of as if it were a single decision-maker who must select a set of procedures for coping with the inherent uncertainties of empiricism -- foremost of which is the risk that purely chance processes will give rise to data supporting false hypotheses. To prevent our hypothetical decision-maker from believing in every hypothesis for which there exists some supporting data, we must use significance testing to separate results that could plausibly be the product of randomness from those which provide strong evidence of some underlying regularity in Nature."
+
+While I agree with part of the argument above -- p-values, when used appropriately, can help an individual researcher resist their all-too-human inclination to discover patterns in noise --, I do not think that this sort of argument applies with similar force to a community of researchers, because the types of information necessary for correctly interpreting p-values are always available to individual researchers acting in isolation, but are seldom available to the members of a community of researchers who learn about each other's work from published reports. For example, the community will frequently be ignorant of the exact research procedures used by its members, even though the details of these procedures can have profound effects on the interpretation of published p-values. To illustrate this concern, let's work through a specific hypothetical example of a reported p-value that cannot be taken at face value.
+
+### The Hidden Multiple Testing Problem
+
+Imagine that Researcher A has measured twenty variables, which we will call $X_1$ through $X_20$. After collecting data, Researcher A attempts to predict one other variable, $Y$, using these twenty variables as predictors in a standard linear regression model in which $Y \sim X_1 + \ldots + X_20$. Imagine, for the sake of argument, that Researcher A finds that $X_17$ has a statistically significant effect on $Y$ at $p < .05$ and rushes to publish this result in the new hit paper: "$Y$ Depends upon $X_17$!". How will Researcher B, who sees only this result and no mention of the 19 variables that failed to predict Y, react?
+
+If Researcher B embraces NHST as a paradigm without misgivings or suspicion, B must react to A's findings with a credulity that could never be defended in the face of perfect information about Researcher A's research methods. As I imagine most scientists are already aware, Researcher A's result is statistically invalid, because the significance threshold that has been passed depended upon a set of assumptions violated by the search through twenty different variables for a predictive relationship. When you use standard NHST p-values to evaluate a hypothesis, you must acquire a new set of data and then test exactly one hypothesis on the entire data set. In our case, each of the twenty variables that was evaluated as a potential predictor of $Y$ constitutes a separate hypothesis, so that Researcher A has not conducted one hypothesis test, but rather twenty. This is conventionally called multiple testing; in this case, the result of multiple testing is that the actual probability of at least one variable being found to predict $Y$ due purely to luck is closer to 50% than to the 5% level suggested by a reported p-value of $p < 0.05$.
+
+What is worrisome is that this sort of multiple testing can be effortlessly hidden from Researcher B, our hypothetical reader of a scientific article. If Researcher A does not report the tests that failed, how can Researcher B know that they were conducted? Must Researcher B learn to live in fear of his fellow scientists, lest he be betrayed by their predilection to underreport their methods?
+
+As I hope is clear from our example, NHST as a method depends upon a faith in the perfection of our fellow researchers that will easily fall victim to any mixture of incompetence or malice on their part. Unlike a descriptive statistic such as a mean, a p-value purports to tell us something that it cannot do without perfect information about the exact scientific methods used by every researcher in our community. An individual researcher will necessarily have this sort of perfect information about their own work, but a community will typically not. The imperfect information available to the community implies that reasoning about the community's ideal standards for measuring evidence based on the ideal standards for a hypothetical individual will be systematically misleading.
+
+If an individual researcher conducts multiple tests without correcting p-values for this search through hypotheses, the individual researcher will develop false hypotheses and harm only themselves. But if even one member of a community of researchers conducts multiple tests and publishes results whose interpretation cannot be sustained in the light of knowledge of the hidden tests that took place, the community as a whole will have only a permanent record of a hypothesis supported by illusory evidence. And this illusion of evidence cannot be easily discovered after the fact without investing effort into explicit replication studies. Indeed, after Researcher A dies, any evidence of their statistical errors will likely disappear, except for the puzzling persistence of a paper reporting a relationship between $Y$ and $X_17$ that has not been found again.
+
+### Conclusion
+
+What should we take away from this example? We should acknowledge that there are deep problems with the theoretical framework used to justify NHST as a scientific institution. NHST, as it stands, is based upon an inappropriate analogy between a community of researchers and a hypothetical decision-maker who evaluates the research of a whole community using NHST. The actual community of researchers suffers from imperfect information about the research methods being used by its members. The sort of fishing through data for positive results described above may result from either statistical naivete or a genuine lack of scruples on the part of our fellow scientists, but it is almost certainly occurring. NHST is only exacerbating the problem, because there is no credible mechanism for insuring that we know how many hypotheses have been tested before discovering a hypothesis that satisfies our community's threshold.
+
+Because the framework of NHST is not appropriate for use by a community with imperfect information, I suspect that the core objective of NHST -- the prevention of false positive results -- is not being achieved. At times, I even suspect that NHST has actually increased the frequency of reporting false positive results, because the universality of the procedure encourages blind searching through hypotheses for one that passes a community's p-value threshold.
+
+This is an unfortunate situation, because I am very sympathetic to those proponents of NHST who feel that it is an unambiguous, algorithmic procedure that diminishes the extent of subjective opinion in evaluating research work. While I agree that diminishing the dependence of science on subjectivity and personal opinion is always valuable, we should not, in our quest to remove subjectivity, substitute in its stead a method that depends upon an assumption of the perfect wisdom and honesty of our fellow scientists. Despite our strong desires to the contrary, human beings make mistakes. As Lincoln might have said, some researchers make mistakes all of the time and all researchers make mistakes some of the time. Because NHST is being used by a community of researchers rather than the theoretical individual for which it was designed, NHST is not robust to the imperfections of our fellow scientists.
+
+### References
+
+Simmons et al. (2011), 'False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant' [SSRN](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1850704)

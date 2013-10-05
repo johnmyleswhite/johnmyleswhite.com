@@ -34,7 +34,7 @@ $$
 
 <div class="well">
 $$  
-Y2 \sim \text{Uniform}(X &#8211; 1, X)  
+Y2 \sim \text{Uniform}(X -- 1, X)  
 $$
 </div>
 

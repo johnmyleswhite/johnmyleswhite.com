@@ -1,5 +1,5 @@
 ---
-title: 'Modes, Medians and Means: A Unifying Perspective'
+title: "Modes, Medians and Means: A Unifying Perspective"
 author: John Myles White
 layout: post
 permalink: /notebook/2013/03/22/modes-medians-and-means-an-unifying-perspective/

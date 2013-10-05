@@ -41,7 +41,7 @@ For example, a uniform variable's representation in floating point has all the f
 * The exponent is not random either because uniform variables are strictly contained in the interval [0, 1].
 * Even the mantissa isn't random. Because floating point numbers aren't evenly spaced in the reals, the mantissa has to have complex patterns in it to simulate the equal-spacing of uniform numbers.
 
-Inspired by all of this, I decided to get a sense for the bit pattern signature of different RNG's. Below I’ve plotted the patterns for uniform, normal, gamma and Cauchy variables using lines that describe the mean value of the i-th bit in the bit string. At a minimum, a completely random bit stream would have a flat horizontal line through 0.5, which many of the lines touch for a moment, but never perfectly match.
+Inspired by all of this, I decided to get a sense for the bit pattern signature of different RNG's. Below I've plotted the patterns for uniform, normal, gamma and Cauchy variables using lines that describe the mean value of the i-th bit in the bit string. At a minimum, a completely random bit stream would have a flat horizontal line through 0.5, which many of the lines touch for a moment, but never perfectly match.
 
 <center>
   <img src="http://www.johnmyleswhite.com/notebook/wp-content/uploads/2012/10/signatures2.png" alt="Signatures" />

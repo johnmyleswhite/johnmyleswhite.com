@@ -1,0 +1,63 @@
+---
+title: "Three-Quarter Truths: Correlation Is Not Causation"
+author: John Myles White
+layout: post
+permalink: /notebook/2010/10/01/three-quarter-truths-correlation-is-not-causation/
+categories:
+  - Statistics
+---
+
+Other than our culture's [implicit association](http://en.wikipedia.org/wiki/Implicit_Association_Test) between [lies, damned lies and statistics](http://en.wikipedia.org/wiki/Lies,_damned_lies,_and_statistics), I think no idea has stifled the growth of statistical literacy as much as the endless repetition of the words [*correlation is not causation*](http://en.wikipedia.org/wiki/Correlation_does_not_imply_causation). This phrase seems to be primarily used to suppress intellectual inquiry by encouraging the unspoken assumption that correlational knowledge is somehow an inferior form of knowledge.
+
+I'd like to defend correlation for a bit. Here are four reasons why I think we should learn to love correlation and stop worrying so much about causation.
+
+### Claim 1: Most Knowledge is Correlational Knowledge
+
+The majority of reliable human knowledge is already correlational. Spend a few days making a list of things that you know for certain about the world. I claim that you will find that a solid majority of them will be correlational statements rather than causal statements. For example, you might notice that you know that teenagers who own [skateboards](http://en.wikipedia.org/wiki/Skateboarding) generally like [punk music](http://en.wikipedia.org/wiki/Punk_rock) more than [world music](http://en.wikipedia.org/wiki/World_music), though you are certainly aware that listening to the [Sex Pistols](http://en.wikipedia.org/wiki/Sex_Pistols) isn't the cause of their desire to learn how to [ollie](http://en.wikipedia.org/wiki/Ollie_(skateboarding_trick)). And you almost certainly know that 's' is followed by 't' more often than 's' is followed by 'r' in English, though you would never claim that an 's' causes an 'r'. (See footnote 1)
+
+Hopefully those two examples are enough to make you suspect that you have an enormous quantity of correlational information stored inside your head. I'd like to further suggest that, despite its low status in our scientific culture, this sort of correlational knowledge has enormous practical value to you, because it allows you to make sense of a world in which you have incomplete information and are constantly required to [fill in the blanks](http://www.ncbi.nlm.nih.gov/pubmed/9798011). For example, if you're out at night in the deep South and suddenly see someone charging towards you dressed in [white sheets](http://en.wikipedia.org/wiki/Ku_Klux_Klan), you'll almost certainly run away, even though you don't believe that white sheets cause lynchings. (See footnote 2) Correlational knowledge can keep you alive when worrying about causality would get you killed.
+
+### Claim 2: The Value of Information is More Complex than the Opposition of Causation and Correlation Would Suggest
+
+Taking this point a step further, it's worth noting that assessing the value of information is a far more difficult problem than one might think. In practice, you always need to ask yourself what you're trying to do with information. In many cases, you aren't trying to control things, which I would claim is the only scenario in which causal knowledge could not be replaced with correlational knowledge in principle. In most real world problems, correlational knowledge is enough to make predictions with very high accuracy. For example, imagine that you run a bank and want to predict whether a person will default on their loan. You find that their zipcode predicts their rate of default quite well. You know full well that a zipcode cannot possibly cause a person to default on their loan, because it's just a number based on a fairly arbitrary way of cutting up neighborhoods. But the absence of a causal relationship is completely irrelevant to you as a banker, since your interest lies in making money -- and not in learning something about the hidden causes of human behavior.
+
+If you want to predict something, rather than control it, the most important thing to ask is how well the information you can acquire will allow you to make predictions. After [addressing this problem](http://en.wikipedia.org/wiki/Cross-validation_(statistics)), you will also need to consider the relative costs of acquiring different sorts of information. For example, suppose that you want to predict a person's height. Most of us accept that our genes are the ultimate cause of our height, barring serious illness or malnutrition as children. That's why the heights of identical twins are so similar, while the heights of fraternal twins can be quite different. Focusing on causal pathway from genes to phenotype might suggest that you should try to measure someone's genes to predict their height. [People have done this](http://www.johndcook.com/blog/2010/08/25/predicting-height-using-genes/) and it doesn't work very well. More importantly, it provides mediocre results at a fairly high cost. Acquiring a genotype is constantly going down in price, but it still costs [a few hundred dollars](https://www.23andme.com/store/).
+
+Another approach comes from the inventor of the concept of correlation: [Francis Galton](http://en.wikipedia.org/wiki/Francis_Galton). [Galton's method](http://wiener.math.csi.cuny.edu/UsingR/Data/galton.html) simply takes your parents' heights and uses a correlational model to predict your height. This approach is correlational because no one believes that your parents' heights cause your height: your parents' genes caused their heights, then their genes caused your genes, and finally your genes caused your height. This is a perfect example of the way in which two things can be correlated because they share a common cause.
+
+By making clever use of correlational information, Galton's method only requires data that is available at almost zero cost, and yet it is more than ten times as accurate as the genetic screening method described above. Sometimes cheap correlational information provides high predictive accuracy, while costly causal information provides almost no predictive power. If you want to do something with information, you should always consider the possibility that a correlational pathway may be cheaper to observe than a causal one -- at the same time that it provides comparable predictive power or even greater predictive power.
+
+### Claim 3: Causation is a Moving Target
+
+Causation is not an entirely well-defined concept. It is an intuitive notion like justice or intelligence, and therefore may not have any definition that corresponds to all of the ways in which the word "cause" is used in normal language. Despite considerable work by philosophers and mathematicians, our accumulated understanding of what causation means is still very weak.
+
+This vagueness works in causation's favor. Because correlation is so much more precise as a concept than causation, it's easier to come up with examples in which correlation doesn't provide us with useful information than it is to come up with examples of the irrelevance of causal knowledge. This discrepancy in [falsifiability](http://en.wikipedia.org/wiki/Falsifiability) is really a general property of mathematical models when compared with intuitive arguments: the precision of mathematical models makes them much more vulnerable to attack than vague ideas. But this brittleness is really a unrecognized virtue, because it is inseparable from the exactness that makes mathematical models directly comparable, precisely communicable and easily modified and extended. Despite their intuitive appeal, ideas whose true or falsehood is hard to assess are less amenable to the incremental improvements that has made scientific knowledge so valuable to humanity.
+
+### Claim 4: Correlation and Causation are Related
+
+Last, but not least, I think correlation and causation are themselves correlated. By this I mean that if you were to list pairs of related things like height and weight, ethnicity and voting preferences, or zipcodes and mortgage default rates; and then classified each relationship as correlational and causal, you'd find that many instances of correlation were accompanied by causation. And you'd find that even more instances of causation were accompanied by correlation. Following [Drew Conway's](http://www.drewconway.com/zia/?p=2378) lead, I'll draw a Venn diagram of the relationship that I believe holds between correlation and causation:
+
+<center>
+  <img src="http://www.johnmyleswhite.com/notebook/wp-content/uploads/2010/10/correlation_vs_causation.jpg" alt="correlation_vs_causation.jpg" />
+</center>
+
+This claim is incredibly hard to test: it is merely meant to remind us how wasteful it can be to [focus exclusively](http://en.wikipedia.org/wiki/Anchoring) on the differences between correlation and causation when they also have important similarities. It is true that correlation is not causation. But it is also true that human beings are not chimpanzees. And yet, in spite of that, we've been able to learn a lot about the human brain from studying the brains of chimpanzees, because there are many cases in which the similarities between humans and chimps are more important than the differences. Similarly, studying correlations can give us valuable information, including information about where to start looking for causal relationships. And even when it can't do this, there is nothing wrong with correlational knowledge that is not also causal knowledge. Knowledge of causation is only necessary when we want to control the world. But there are many aspects of the world that we are largely unable to control, even in principle. In those cases, we simply need to have accurate predictions, because prediction without causation is enough for us to make the best of what is going to happen in the future. [Assessing our ability to make predictions](http://en.wikipedia.org/wiki/Goodness_of_fit) is vitally important, and it is the habit of making testable and precise predictions that an education in statistics can give to us. So let's embrace a world with rich data sets that can provide us with formal, testable knowledge based on unambiguous, formal models -- even if those models won't ultimately provide us with causal mechanisms.
+
+With all of that said, if you really want to understand the distinctions between correlation and causality, there is a rich academic literature that is far subtler and more interesting than the folk philosophy of science that I've been attacking. The current classic is [Judea Pearl](http://bayes.cs.ucla.edu/jp_home.html)'s masterwork, entitled simply ["Causality"](http://www.amazon.com/Causality-Reasoning-Inference-Judea-Pearl/dp/0521773628). It is very challenging material, but well worth the effort. And understanding it will require you to master so much of the machinery of prediction that you'll walk away enlightened even if you decide in the end that causality doesn't really interest you.
+
+For most people, though, I have a different closing message. Please don't allow the absence of causation to be used as a justification for remaining ignorant about the correlational structure of our world. Though there are cases in which knowing that A is related to B is much less useful than knowing that A causes B, knowing that A and B are related at all is still far better than knowing nothing at all -- and we currently know nothing about many things. We should stop focusing on the ways in which correlation is not causation and instead follow Voltaire's advice: [do not allow the perfect to become the enemy of the good](http://fr.wikisource.org/wiki/La_Bégueule). (See footnote 3)
+
+### Footnotes
+
+(1) You can quickly check this with the following shell script on OS X:
+
+{% highlight bash %}
+grep 'sr' /usr/share/dict/words | wc -l
+grep 'st' /usr/share/dict/words | wc -l
+{% endhighlight %}
+    
+Running those commands should show you that there are 156 examples of 'sr' and 21,407 examples of 'st' in the standard UNIX dictionary.
+
+(2) Especially not if you've seen <a href="http://gospain.about.com/od/semanasantaeaster/a/semana_santa.htm">Santa Semana celebrations in Spain
+
+(3) These ideas came up during a recent planning session for O'Reilly's upcoming <a href="http://strataconf.com/strata2011">Strata Conference</a>, during which <a href="http://www.columbia.edu/~chw2/">Chris Wiggins</a> said that he thought the distinction between correlation and causation was a red herring. My desire to expand on the reasons why I agreed with him inspired me to write my own ideas down.
